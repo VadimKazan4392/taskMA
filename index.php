@@ -27,7 +27,7 @@ $pathDir = $_SERVER['DOCUMENT_ROOT'] . '/results/';
 foreach($allData["Pvz"] as $item) {
     $dirName = $pathDir . $item['@attributes']['RegionName'];
     if(!is_dir($dirName)) {
-        $a = mkdir("/{$dirName}", 0777, true);
+        mkdir("/{$dirName}", 0777, true);
         writeFile($item, $dirName);
     } else {
         writeFile($item, $dirName);
