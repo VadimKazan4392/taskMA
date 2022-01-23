@@ -3,8 +3,7 @@
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  //CURLOPT_URL => 'https://integration.cdek.ru/pvzlist/v1/xml?countryid=1',
-  CURLOPT_URL => 'https://integration.edu.cdek.ru/pvzlist/v1/xml',
+  CURLOPT_URL => 'https://integration.cdek.ru/pvzlist/v1/xml?countryid=1',
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => '',
   CURLOPT_MAXREDIRS => 10,
